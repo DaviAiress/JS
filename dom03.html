@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Me Mude com JS</h1>
+    <div>A: <span>3</span></div>
+    <div>B: <span>2</span></div>
+    <div>A+B: <span>?</span></div>
+    <script>
+        console.log("Hello World");
+        //pega referencia para todos os elementos
+        const spans = document.querySelectorAll("span");
+        const eA = spans[0];
+        const eB = spans[1];
+        const eC = spans[2];
+        //opera os dados
+        const a = parseInt(eA.textContent);
+        const b = Number(eB.textContent);
+        const c = a+b;
+        //escreve a saida
+        eC.textContent = c;
+    </script>
+</body>
+</html>
