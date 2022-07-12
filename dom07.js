@@ -4,9 +4,10 @@ const eA = spans[0];
 const eB = spans[1];
 const eC = spans[2];
 //partes desnecessárias que um OnClick resolveria
+const eButton = document.querySelectorAll("button")
 const eButtonSoma = eButton[0];
 const eButtonMutiplica = eButton[1];
-const eButton = document.querySelectorAll("button")
+
 eButtonSoma.addEventListener("click", soma)
 eButtonMutiplica.addEventListener("click", multiplica)
 
